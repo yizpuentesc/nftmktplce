@@ -19,14 +19,14 @@ module.exports = {
           elevated: '#1A1A20',
         },
         // Text
-        'text-primary': '#F5F5F7',
+        'text-primary': '#e5e5e5',
         'text-secondary': '#A0A0A8',
         'text-muted': '#B0B0B8',
         // Accents
         accent: {
-          DEFAULT: '#00AFFF',
-          hover: '#40D0FF',
-          bright: '#00C4FF',
+          DEFAULT: '#00bb72',
+          hover: '#00d67d',
+          bright: '#00e08a',
         },
         success: '#00E08A',
         // Borders / dividers
@@ -52,8 +52,8 @@ module.exports = {
       },
       boxShadow: {
         'soft': '0 4px 20px rgba(0,0,0,0.45)',
-        'glow': '0 0 16px rgba(0,175,255,0.25)',
-        'glow-hover': '0 0 24px rgba(0,175,255,0.35)',
+        'glow': '0 0 16px rgba(0,187,114,0.25)',
+        'glow-hover': '0 0 24px rgba(0,187,114,0.35)',
       },
       backgroundImage: {
         'gradient-hero': 'linear-gradient(to bottom, #0F0F12, #001833)',

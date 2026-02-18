@@ -5,6 +5,25 @@ import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { Button } from './ui/Button';
 
+function Logo() {
+  const [imgError, setImgError] = useState(false);
+  return (
+    <>
+      {!imgError ? (
+        <img
+          src="/logo.png"
+          alt="Exury"
+          className="h-10 sm:h-12 w-auto object-contain max-w-[180px]"
+          onError={() => setImgError(true)}
+        />
+      ) : null}
+      <span className={imgError ? 'text-text-primary font-bold text-xl tracking-tight' : 'sr-only'}>
+        Exury
+      </span>
+    </>
+  );
+}
+
 const navLinks = [
   { href: '/market', label: 'Market' },
   { href: '/create', label: 'Create' },
@@ -25,9 +44,10 @@ export function Navbar() {
       >
         <Link
           href="/"
-          className="text-text-primary font-bold text-xl tracking-tight hover:text-accent transition-colors duration-200"
+          className="flex items-center gap-3 hover:opacity-90 transition-opacity duration-200 min-h-[40px]"
+          aria-label="Exury – Home"
         >
-          Exury
+          <Logo />
         </Link>
 
         <ul className="hidden md:flex items-center gap-8">

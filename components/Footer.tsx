@@ -32,7 +32,7 @@ export function Footer() {
               Exury
             </Link>
             <p className="mt-4 text-text-secondary text-sm leading-relaxed max-w-xs">
-              Premium NFT marketplace. Secure, elegant, built for serious collectors.
+              Premium NFT marketplace for serious collectors.
             </p>
           </div>
           <div>
